@@ -23,7 +23,7 @@
   "license": "Apache",
   "main": "index.js",
   "name": "@mubaidr/fast-folder-size",
-  "packageManager": "pnpm@8.6.0",
+  "packageManager": "npm@9.6.7",
   "repository": {
     "url": "https://github.com/mubaidr/fast-folder-size.git"
   },

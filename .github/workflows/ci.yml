@@ -10,15 +10,12 @@ jobs:
         os: [ubuntu-latest, windows-latest, macOS-latest]
 
     steps:
-      - uses: actions/checkout@v2.3.4
-      - uses: actions/setup-node@v2.1.5
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - uses: pnpm/action-setup@v2.2.4
-        with:
-          version: 8.6.0
-      - run: pnpm i --frozen-lockfile
-      - run: pnpm i -g .
+      - run: npm ci
+      - run: npm i -g .
       - run: fast-folder-size .
-      - run: pnpm run lint
-      - run: pnpm test
+      - run: npm run lint
+      - run: npm run test

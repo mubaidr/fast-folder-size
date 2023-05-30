@@ -1,37 +1,37 @@
 {
-  "name": "fast-folder-size",
-  "version": "1.7.1",
-  "description": "Node CLI or module to calculate folder size",
-  "main": "index.js",
+  "author": "Muhammad Ubaid Raza <mubaidr@gmail.com>",
   "bin": {
     "fast-folder-size": "cli.js"
   },
-  "types": "types/index.d.ts",
-  "author": "Simone Busoli <simone.busoli@gmail.com>",
-  "scripts": {
-    "test": "tap && tsd",
-    "postinstall": "node get-sysinternals-du.js",
-    "lint": "eslint ."
+  "dependencies": {
+    "unzipper": "^0.10.14"
+  },
+  "description": "Node CLI or module to calculate folder size",
+  "devDependencies": {
+    "@types/node": "^16.18.34",
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8",
+    "tap": "^16.3.4",
+    "tsd": "^0.28.1"
   },
   "keywords": [
     "fast",
     "folder",
     "size"
   ],
+  "license": "Apache",
+  "main": "index.js",
+  "name": "@mubaidr/fast-folder-size",
   "repository": {
-    "url": "https://github.com/simoneb/fast-folder-size.git"
+    "url": "https://github.com/mubaidr/fast-folder-size.git"
   },
-  "license": "AWISC",
-  "dependencies": {
-    "unzipper": "^0.10.11"
+  "scripts": {
+    "lint": "eslint .",
+    "postinstall": "node get-sysinternals-du.js",
+    "test": "tap && tsd"
   },
-  "devDependencies": {
-    "@types/node": "^15.6.1",
-    "eslint": "^7.21.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "prettier": "^2.2.1",
-    "tap": "^15.0.1",
-    "tsd": "^0.16.0"
-  }
+  "types": "types/index.d.ts",
+  "version": "2.0.0"
 }

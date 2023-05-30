@@ -17,13 +17,13 @@
     "tsd": "^0.28.1"
   },
   "keywords": [
-    "fast",
     "folder",
     "size"
   ],
   "license": "Apache",
   "main": "index.js",
   "name": "@mubaidr/fast-folder-size",
+  "packageManager": "npm@9.6.7",
   "repository": {
     "url": "https://github.com/mubaidr/fast-folder-size.git"
   },
